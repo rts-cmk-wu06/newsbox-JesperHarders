@@ -1,0 +1,15 @@
+.searchField {
+    position: relative;
+    margin-bottom: 30px;
+
+    .searchField__Input {
+        margin: 0 auto;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .searchField__Icon {
+        position: absolute;
+        transform: translate(-150%, 60%);
+    }
+}
