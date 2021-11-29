@@ -10,7 +10,6 @@ if(localStorage.getItem('archivedItems')){
 }
 
 mainContainer.addEventListener('touchstart', (e) => {
-
     
     startLocation = Math.floor(e.touches[0].clientX)
     
