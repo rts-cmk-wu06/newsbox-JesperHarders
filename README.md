@@ -1,4 +1,4 @@
-## [Link til projektet](https://jesper-newsbox.netlify.app/)
+## [Link til opgaven](https://jesper-newsbox.netlify.app/)
 
 ## Praktik opgave newsbox!
 I denne praktikperiode skal I udvikle en nyheds webapplikation som er optimeret til den mobile skærm. I applikationen skal der listes nyheder fra The New York Times i et kategoriseret nyhedsoverblik. Det skal være muligt at vælge(klikke på) en nyhed i listen, hvorefter brugeren vil blive sendt videre til den fulde artikel på nytimes.com.<br><br>
