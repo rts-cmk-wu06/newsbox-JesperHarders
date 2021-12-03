@@ -21,6 +21,14 @@ mainContainer.addEventListener('touchstart', (e) => {
                 e.target.style.transform = `translateX(${touchMove - startLocation}px)`
             }
         }
+
+        if(e.target.tagName == 'P'){
+            touchMove = Math.floor(e.touches[0].clientX)
+            
+            if(touchMove < startLocation && touchMove > startLocation - (window.screen.width * 40) / 100){
+                e.target.parentElement.parentElement.style.transform = `translateX(${touchMove - startLocation}px)`
+            }
+        }
         
     })
     
@@ -34,6 +42,16 @@ mainContainer.addEventListener('touchstart', (e) => {
                 e.target.style.transform = `translateX(0)`
             }
         }
+
+        if(e.target.tagName == 'P'){
+            endLocation = Math.floor(e.changedTouches[0].clientX)
+            const archiveBtnWidth = (window.screen.width * 40) / 100
+            if(endLocation < startLocation - archiveBtnWidth / 2){
+                e.target.parentElement.parentElement.style.transform = `translateX(-${archiveBtnWidth}px)`
+            } else {
+                e.target.parentElement.parentElement.style.transform = `translateX(0)`
+            }
+        }
     })
     
     if(e.target.classList == 'archiveBtn'){
@@ -43,7 +61,8 @@ mainContainer.addEventListener('touchstart', (e) => {
             let userObject = {
                 id: e.target.parentElement.id,
                 titel: e.target.parentElement.querySelector('.newsTitel').textContent,
-                text: e.target.parentElement.querySelector('.newsText').textContent
+                text: e.target.parentElement.querySelector('.newsText').textContent,
+                img: e.target.parentElement.querySelector('.newsImage').src
             }
 
             archivedList.push(userObject)

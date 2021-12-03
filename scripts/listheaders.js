@@ -3,13 +3,11 @@ const newsCardslistWorld = document.querySelector('#newscardsWorld')
 
 let arrowElements = [arrowElementWorld]
 
-arrowElements.forEach(element => {
-    element.addEventListener('click', () => {
-        if(element.classList !== 'rotate-right'){
-            element.classList.add('rotate-right')
-        } else {
-            element.remove('rotate-right')
-        }
-
-    })
+arrowElementWorld.addEventListener('click', (e) => {
+    if(e.target.classList == 'rotate-right'){
+        e.target.classList.remove('rotate-right')
+    } else {
+        e.target.classList.add('rotate-right')
+        console.log(e);
+    }
 })

@@ -19,6 +19,10 @@
     font-size: 18pt;
 }
 
+.newscards__list {
+    padding: 0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr, 40%;
@@ -36,6 +40,7 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+    width: 150px;
 }
 
 .archiveBtn {
@@ -47,6 +52,7 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+    width: 150px;
 }
 
 .newsarticle {
@@ -66,8 +72,18 @@
 .newsImage {
     width: 70px;
     border-radius: 50px;
+    margin-right: 10px;
 }
 
 .newsText {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+}
+
+.newsTitel {
+    font-weight: 800;
+    font-size: 10pt;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
 }
